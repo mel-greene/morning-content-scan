@@ -1,9 +1,10 @@
 # Morning Content Scan — task prompt template
 
 This is the complete prompt for the scheduled task, with `[BRACKETED]`
-placeholders where your configuration goes. Everything else — my pillars,
-sources, and tier criteria — is my real configuration, left in as the worked
-example. Swap the substance, keep the structure.
+placeholders where your configuration goes. The worked example threaded
+through it is a FICTIONAL e-commerce operations consultant — realistic enough
+to show the shape, deliberately not my configuration. The structure, phases,
+and rules are the real task. Swap the substance, keep the structure.
 
 Dated rules like "(added 2026-08-16)" are review notes that became permanent
 rules. Keep the habit: when the scan gets something wrong, add a dated rule
@@ -27,20 +28,18 @@ vendor's productivity beat is paused business-wide; the exception is when that
 vendor's news lands as an advertising story, because that's a different beat.]
 
 **Content pillars:** [List yours, numbered. Each pillar should say what
-qualifies and what job the content does. Mine, as the example:]
-1. AI automation for service businesses (law firms, wellness, trades,
-   bookkeeping)
-2. Microsoft 365 / Copilot for non-technical professionals — TOP PRIORITY
-3. Claude / Anthropic updates with clear business applications
-4. Enterprise AI adoption and change management
-5. AI Governance & Policy — cover when there's a concrete consequence for
-   professionals or businesses
-6. AI's impact on women — work, careers, income, and opportunities
-7. AI in Marketing — tools marketers actually use, and notable AI-in-marketing
-   moves or case studies. Feeds my weekly roundup.
-8. Big brand marketing moves — feeds my weekly brand-commentary series. Brand
-   lens (a lens, not a fence): [your brand roster]. Newsworthy cool brands
-   outside the roster are fair game.
+qualifies and what job the content does. The fictional example:]
+1. Shopify and storefront platform updates that change day-to-day store
+   operations — TOP PRIORITY
+2. Email/SMS automation tools (Klaviyo tier) with a clear revenue application
+3. AI in e-commerce operations: inventory, support, personalization
+4. Consumer-protection and privacy regulation with a concrete merchant
+   consequence
+5. Logistics and fulfillment shifts that hit margins
+6. DTC brand moves — feeds a weekly brand-teardown series. Brand lens (a
+   lens, not a fence): [your brand roster — the example's would be DTC
+   apparel, beauty, and food]. Newsworthy brands outside the roster are fair
+   game.
 
 **Audiences:** [Who you're writing for, per pillar or stream.]
 
@@ -103,9 +102,10 @@ videos, posts, and links I saved because something caught my eye.
 
 [Name the 2-3 beats where you cannot afford to miss anything. The rule that
 matters: these get fetched directly and read past the index, never assessed
-from a search-results roundup. Mine are Microsoft 365/Copilot and
-Claude/Anthropic; each lists its exact blog URLs, and the task may not claim
-a source was checked unless every URL was actually fetched that run.]
+from a search-results roundup. The fictional consultant's would be the
+Shopify changelog + blog and the Klaviyo release notes; each entry lists its
+exact URLs, and the task may not claim a source was checked unless every URL
+was actually fetched that run.]
 
 TRY HARDER — read past the index:
 1. Open article bodies, don't stop at titles. Some blogs are
@@ -123,11 +123,11 @@ useful planning information.
 ### BEAT SEARCHES (WebSearch is fine here)
 
 [One block per remaining pillar. Each needs: the search queries verbatim, the
-freshness window, and what qualifies vs. what's an automatic skip. Mine
-include: an AI-tools-for-marketers beat with a starter tool list marked
-non-exhaustive; a big-brand marketing sweep with "verified facts only, no
-'reportedly' stories"; a governance search where hearings and op-eds without
-a decision are SKIP; and one broad breaking-AI-news search.]
+freshness window, and what qualifies vs. what's an automatic skip. The
+fictional consultant's would include: an e-commerce-AI-tools beat with a
+starter tool list marked non-exhaustive; a DTC brand sweep with "verified
+facts only, no 'reportedly' stories"; a regulation search where proposals
+without a decision are SKIP; and one broad breaking-industry-news search.]
 
 Capture title, source, URL, and a note per item. Hold everything for Phase 3.
 

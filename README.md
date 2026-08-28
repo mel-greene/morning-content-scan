@@ -14,6 +14,12 @@ This repo is the real task, published as a working template — second in my
 [systems-as-receipts](https://github.com/mel-greene) series after
 [reel-edit-system](https://github.com/mel-greene/reel-edit-system).
 
+One honest caveat: the structure, phases, and rules are my actual task,
+verbatim in shape. The example configuration inside it (the pillars, the
+priority sources) is a fictional e-commerce consultant, because my editorial
+map is the one part I'm keeping. You were going to replace the configuration
+with yours anyway — that's the point of a template.
+
 ## How it works
 
 **[SCAN-TASK.md](SCAN-TASK.md)** is the complete task prompt. Five phases:
@@ -50,8 +56,8 @@ they're all in the task:
    Slack, and browsing connected.
 2. Copy SCAN-TASK.md and replace every `[BRACKETED]` placeholder: your
    database IDs, Slack channel, newsletter senders, pillars, and voice rules.
-   My real configuration is left in place as the worked example — swap the
-   substance, keep the structure.
+   The worked example inside is a fictional e-commerce consultant — swap in
+   your own beats the same way.
 3. Create a scheduled task in Cowork with your edited prompt. Mine runs daily
    at 4:33 AM with pre-approved permissions for exactly four actions: archive
    Gmail threads, create Notion pages, update Notion pages, send Slack
@@ -61,4 +67,5 @@ they're all in the task:
 
 ## License
 
-[MIT](LICENSE). The configuration shown is mine; the structure is yours.
+[MIT](LICENSE). The structure is the real system; the example configuration
+is fictional; your configuration is yours.
