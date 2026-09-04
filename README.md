@@ -24,17 +24,22 @@ with yours anyway — that's the point of a template.
 
 **[SCAN-TASK.md](SCAN-TASK.md)** is the complete task prompt. Five phases:
 
-0. **Inspiration review** — reads whatever I saved to my inspiration database
-   yesterday and suggests a specific post angle for each piece
 1. **Public blog scan** — priority sources fetched directly and read deeply
    (index pages lie; the task opens article bodies), plus beat searches for
-   each content pillar
+   each content pillar, trade press first
 2. **Newsletter scan** — three groups of Gmail newsletters, mined then archived
 3. **Evaluation** — every item sorted into a tier: REACTION REEL (script it
    today), SERIES CANDIDATE (log it to the ideas database), PASS (log as an
    update), ASK (flag for a decision), SKIP (silence)
 4. **Action** — scripts drafted, databases updated, ONE grouped Slack message
 5. **Cleanup** — scanned newsletters archived out of the inbox
+
+The inspiration review used to be Phase 0 of this task. It now runs as its own
+scheduled task a few minutes ahead of the scan, and SCAN-TASK.md explains the
+test I used to decide: a phase that reads its own source, writes its own
+message, needs its own tool, and does nothing at all on a quiet day belongs in
+its own task. Bundled in, it delayed the scan and its failures looked like scan
+failures.
 
 ## The rules that make it good
 
@@ -49,6 +54,9 @@ they're all in the task:
 - **Asset reality.** Drafted copy never promises a deliverable that doesn't
   exist yet.
 - **Wide net where sources are new, high bar for what gets written down.**
+- **Trade press first, foresight over feature tracking.** On the beats that
+  are about where an industry is going, a vendor announcing a feature with no
+  customer story attached is a skip, however on-topic it looks.
 
 ## Setup
 

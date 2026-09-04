@@ -73,26 +73,26 @@ tip is the exact status theatre banned above.
 
 ---
 
-## PHASE 0: INSPIRATION REVIEW
+## COMPANION TASK: INSPIRATION REVIEW (split out of this one)
 
-Before scanning public sources, check what I added to my
-[INSPIRATION DATABASE — mine is a Notion database with Title, Platform, URL,
-and Date Saved fields] yesterday. This is a daily creative brief from me:
-videos, posts, and links I saved because something caught my eye.
+The inspiration review used to be Phase 0 of this task: read whatever I saved
+to my [INSPIRATION DATABASE] yesterday, write ONE specific post angle per
+piece mapped to a pillar, post a single message, and write nothing to the
+content database — I decide what to act on. It now runs as its own scheduled
+task a few minutes BEFORE this one.
 
-1. Pull yesterday's entries. If nothing was added, skip this phase entirely —
-   no message needed.
-2. Read each piece: load the URL and extract whatever text is available
-   (captions for Reels/TikToks, title + description for YouTube, full body
-   for posts and articles). If a page fails to load or is behind a login,
-   note that and move on — never fabricate content.
-3. For each readable piece, write ONE specific post angle: what I could say
-   about this, from my POV, for my audience, and which format fits. "Talk
-   about AI" is not a suggestion. Map it to a pillar; if it maps to none,
-   say so and skip the angle.
-4. Post ONE message to [#YOUR-CONTENT-CHANNEL] with the full review. Do not
-   write anything to the content database for this phase — I decide what to
-   act on.
+Why the split, because the same test applies to any phase you're tempted to
+bolt on here: that review read its own single source, produced its own single
+message, needed a different tool than the rest of the scan (a browser, to
+read captions on posts and videos), and did nothing at all on the days I
+saved nothing. Bundled in, it delayed the scan on heavy days and its browser
+failures read as scan failures. Split out, each task fails on its own and the
+scan starts from a clean state.
+
+Rule of thumb: if a phase reads its own source, writes its own message, and
+often does nothing at all, give it its own task scheduled just ahead of this
+one. Keep the phases below together — they share the same evaluation pass,
+which is the whole point of Phase 3.
 
 ---
 
@@ -128,6 +128,35 @@ fictional consultant's would include: an e-commerce-AI-tools beat with a
 starter tool list marked non-exhaustive; a DTC brand sweep with "verified
 facts only, no 'reportedly' stories"; a regulation search where proposals
 without a decision are SKIP; and one broad breaking-industry-news search.]
+
+### TRADE PRESS FIRST, EDITORIAL LENS ALWAYS
+
+Some of those beats are about where an industry is going, not about what a
+vendor shipped. For those, the goal is foresight, not feature tracking, and
+the order of operations matters: sweep the trade press FIRST, every run,
+before anything a vendor published about itself.
+
+[List the trade titles per beat as verbatim site-scoped searches with a
+freshness window, plus a second line of titles worth checking when the angle
+is clearly on-beat. The fictional consultant would sweep the retail and DTC
+trade press for the store-operations and brand beats. Any subscriber
+newsletters that cover the same beat (Phase 2) are secondary but often carry
+the better story — mine them for these beats too.]
+
+Then apply the editorial lens to every item on these beats: "what does this
+mean for how the people I serve compete or operate, and is there something
+here a forward-looking one of them would act on?" If you can't answer that,
+skip it.
+
+- Qualifies: a named case study; a platform or channel change with a concrete
+  consequence for someone downstream; a strategic bet nobody has copied yet;
+  a pattern that hasn't been named.
+- Automatic SKIP: a vendor announcing a feature with no customer story
+  attached; a trend piece with no named example.
+
+Capture the what, the who, and the transferable lesson — a headline alone
+isn't an item. Both ends of the size range count: the smallest operator and
+the largest enterprise are equally valid when the lesson transfers.
 
 Capture title, source, URL, and a note per item. Hold everything for Phase 3.
 
@@ -188,7 +217,9 @@ mine includes priority-vendor features that change day-to-day work, tool
 drops with a non-technical angle, brand stories worth the weekly roundup,
 governance items with a concrete business consequence, and process teardowns
 with a repeatable mechanic.] When unsure between PASS and REACTION: just log
-it.
+it. Items from the foresight beats clear PASS only through the editorial lens
+in Phase 1 — on-pillar is not enough, a vendor feature with no user story
+attached is still a SKIP.
 
 **ASK — flag, don't write.** Unsure it's worth a post, needs an angle
 confirmed, or surprising but doesn't cleanly fit. Also the default home for
@@ -221,7 +252,10 @@ subject + same hook already in the database at any status = silent skip.
 
 ### PASS items — log the update, no full post copy
 2-3 plain sentences on what changed and why it matters, plus the source. Tag
-entries so the weekly roundup task can find its pool. More than three updates
+each entry with WHICH weekly roundup it feeds and WHICH beat it came from, in
+a field the roundup task can filter on plus a plain line in the body. Once
+you run more than one roundup, an untagged update is one the roundup task has
+to re-read the source to place, which it won't. More than three updates
 in one run = ONE grouped Slack message sorted by priority, never a ping per
 item.
 
