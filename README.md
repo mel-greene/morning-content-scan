@@ -57,6 +57,10 @@ they're all in the task:
 - **Trade press first, foresight over feature tracking.** On the beats that
   are about where an industry is going, a vendor announcing a feature with no
   customer story attached is a skip, however on-topic it looks.
+- **Feeds before search.** On those same beats the task reads dated RSS feeds
+  and topic hubs first, because a site-scoped search ranks authority over
+  recency and hands back evergreen hub pages instead of this morning's news.
+  Search is for filling a specific gap.
 
 ## Setup
 

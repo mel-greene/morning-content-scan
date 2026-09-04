@@ -122,6 +122,9 @@ useful planning information.
 
 ### BEAT SEARCHES (WebSearch is fine here)
 
+[This applies to the beats below. The foresight beats in the next section are
+the exception: there, search is the fallback, not the opening move.]
+
 [One block per remaining pillar. Each needs: the search queries verbatim, the
 freshness window, and what qualifies vs. what's an automatic skip. The
 fictional consultant's would include: an e-commerce-AI-tools beat with a
@@ -136,12 +139,44 @@ vendor shipped. For those, the goal is foresight, not feature tracking, and
 the order of operations matters: sweep the trade press FIRST, every run,
 before anything a vendor published about itself.
 
-[List the trade titles per beat as verbatim site-scoped searches with a
-freshness window, plus a second line of titles worth checking when the angle
-is clearly on-beat. The fictional consultant would sweep the retail and DTC
-trade press for the store-operations and brand beats. Any subscriber
-newsletters that cover the same beat (Phase 2) are secondary but often carry
-the better story — mine them for these beats too.]
+[List the trade titles per beat, plus a second line of titles worth checking
+when the angle is clearly on-beat. The fictional consultant would sweep the
+retail and DTC trade press for the store-operations and brand beats. Any
+subscriber newsletters that cover the same beat (Phase 2) are secondary but
+often carry the better story — mine them for these beats too.]
+
+**WINDOW RULE (added 2026-09-03):** default these sweeps to the last 24 hours,
+since the scan runs daily. If the previous run was more than a day ago, widen
+the window to cover the actual gap so a skipped run doesn't leave a blind spot.
+Work out when the last run actually happened from the newest created-at
+timestamps in the content calendar, and say in the Slack summary if you widened
+and why. Search has no reliable date filter, so the window is a filter you
+apply after reading publication dates, not a search parameter.
+
+**METHOD: RSS FIRST, SEARCH SECOND (added 2026-09-03).** Do not lead with
+site-scoped search on these beats. Tested and failed: queries shaped like
+`[beat] site:[trade title] OR site:[trade title]` return evergreen hub pages,
+event listings and sponsored posts, almost nothing inside the window. A broad
+topical query plus a `site:` operator ranks authority over recency, which is
+the opposite of what a daily scan needs. Feeds are dated and in
+reverse-chronological order, and one small fetch returns ten or more items
+where a single article page can blow past the token limit. Per run, for each
+publication:
+
+1. **Fetch the RSS feed and read the publication date on each item.** Keep only
+   items inside the window.
+2. **If you do not have a feed URL yet,** note that fetching is
+   provenance-restricted: it only retrieves URLs that already appeared in a
+   message, a prior fetch, or a search result. So search the domain first, or
+   fetch the publication homepage or topic hub and read the feed URL out of the
+   page (usually in the footer, or as `<link type="application/rss+xml">`).
+   Once confirmed, add it to the list above with the date you verified it.
+   Never guess a feed URL.
+3. **If a publication has no usable feed,** fetch its topic hub directly rather
+   than searching. Hub pages are chronological and dated; search results are
+   not.
+4. **Use search only to fill gaps:** a specific story you need to verify, a
+   named brand, or a publication outside the roster.
 
 Then apply the editorial lens to every item on these beats: "what does this
 mean for how the people I serve compete or operate, and is there something
@@ -153,6 +188,13 @@ skip it.
   a pattern that hasn't been named.
 - Automatic SKIP: a vendor announcing a feature with no customer story
   attached; a trend piece with no named example.
+
+**On tool and model news (added 2026-09-03):** big model launches and genuinely
+notable new tools are wanted, but they belong to the tool/vendor pillar and the
+broad breaking-news sweep, not to a foresight beat. Do not let a foresight beat
+turn into a changelog for every tool in the category that ships a feature. If a
+release only matters because of what it lets someone newly do, write it up as
+the strategic shift, not as the feature.
 
 Capture the what, the who, and the transferable lesson — a headline alone
 isn't an item. Both ends of the size range count: the smallest operator and
