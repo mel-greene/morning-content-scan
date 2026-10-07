@@ -12,6 +12,29 @@ instead of re-explaining yourself next month.
 
 ---
 
+## Current direction: [DATE OF YOUR LATEST STRATEGY NOTE]
+
+[Optional, but worth the two paragraphs once your positioning starts moving
+faster than this prompt does. Point the task at a dated strategy document —
+"before scanning, read [PATH], the strategy it names, and that project's
+agent file; apply its scan section" — and say plainly that those current
+instructions override any stale positioning left in the prompt below. A long
+prompt accumulates assumptions, and a dated pointer is cheaper to keep true
+than the whole file.]
+
+[Then write a PORTABLE FALLBACK paragraph for the run where those references
+can't be read: the handful of standing priorities, which inquiries are
+legitimate destinations, what the task must not invent (assets, results,
+product access, prices), and which pauses stay paused. End it with "report
+unreadable references" so a silent fallback never looks like a normal run.]
+
+**If the live trigger for this task lives somewhere else** — a remote
+scheduler, a hosted prompt — say so at the top of this file. Editing a local
+copy does not update a saved remote prompt, and the next person to read it
+will assume it does.
+
+---
+
 ## Morning Content Scan — [YOUR BUSINESS NAME]
 
 Runs daily at [TIME]. Scans public blogs and Gmail newsletters for anything
@@ -43,10 +66,17 @@ qualifies and what job the content does. The fictional example:]
 
 **Audiences:** [Who you're writing for, per pillar or stream.]
 
-**Voice guardrails (all copy this task writes):** [Your voice rules. Mine:
-direct, confident, a little cheeky, never buzzwordy. US English. Contractions
-everywhere. No m-dashes: commas or colons. Banned words listed by name.
-Second person where it fits.]
+**VOICE: READ THE SOURCE, DON'T WORK FROM THIS SUMMARY (added 2026-09-17).**
+If your voice rules live in their own document or skill, load it IN FULL
+before writing a single line of copy in Phase 4 — every run, not just the
+runs where the brief mentions voice. A run that worked from the summary
+paragraph below instead of the real rules shipped a script and twenty update
+bodies that broke two of them. The summary is a reminder, not a substitute.
+
+**Voice guardrails (quick recall only — all copy this task writes):** [Your
+voice rules. Mine: direct, confident, a little cheeky, never buzzwordy. US
+English. Contractions everywhere. No m-dashes: commas or colons. Banned words
+listed by name. Second person where it fits.]
 
 **ASSET REALITY RULE (non-negotiable):** Never write copy or a CTA that
 promises a deliverable that does not already exist. Copy from this task ends
@@ -171,7 +201,10 @@ publication:
    fetch the publication homepage or topic hub and read the feed URL out of the
    page (usually in the footer, or as `<link type="application/rss+xml">`).
    Once confirmed, add it to the list above with the date you verified it.
-   Never guess a feed URL.
+   Never guess a feed URL. **Provenance is per exact URL (added 2026-09-17):**
+   a homepage appearing in a search result does NOT unlock `/feed/` on that
+   domain. Fetch the hub page that actually appeared, then take the feed link
+   out of it.
 3. **If a publication has no usable feed,** fetch its topic hub directly rather
    than searching. Hub pages are chronological and dated; search results are
    not.
@@ -278,6 +311,49 @@ the bar deliberately low on what gets surfaced in Slack from new sources.
 
 ## PHASE 4: ACT ON RESULTS
 
+### THE DE-AI AUDIT — run it before a single database write or Slack send (added 2026-09-17)
+
+Draft every script, caption and update body FIRST. Then read the whole batch
+back and run this audit. None of these tells are hypothetical: every one
+shipped in a single run before this section existed.
+
+Your voice rules already ban most of this — read them before drafting. This
+audit is the second gate, not the first.
+
+1. **The negation flip.** Search every draft for "isn't", "is not", "not X"
+   followed by a correction: "the question isn't whether it finished, it's
+   whether it stayed inside the lines." Banned in full form, split across
+   sentences, as a fragment payoff, and inverted. State the claim
+   affirmatively and let the contrast live in the surrounding paragraph.
+
+2. **Announcer phrases.** Cut any clause whose only job is to tell the reader
+   that what follows matters: "the mechanic worth stealing", "there's a
+   pattern worth naming here", "the interesting part is", "the point:",
+   "that's the one to sit with", "credit where it's due", "here's why". Say
+   the thing itself. If it matters, it shows.
+
+3. **The trailing significance paragraph.** The batch-level tell, and the
+   hardest to catch one item at a time. Read all the update bodies in
+   sequence. If most of them close on a sentence whose only job is to explain
+   the facts above it, the batch reads as machine-written even where each item
+   passes on its own. Cut that sentence from most of them. An update is
+   allowed to end on a fact.
+
+4. **Hedged imperatives.** "Worth testing", "worth knowing", "worth a look".
+   If the audience should test it, write "test this".
+
+5. **Banned words, checked literally.** Search every draft for each word on
+   your banned list, as a string — and for em-dashes if your voice rules ban
+   them. These are hard guardrails and they apply to update bodies and Slack
+   messages, not only to captions.
+
+6. **Repetition across the batch.** Two items opening the same way, or three
+   running the same rhythm, is itself a tell. Vary them.
+
+If the audit changes something already written to the database or to Slack
+this run, fix it and say so plainly rather than leaving the earlier version
+standing.
+
 ### REACTION items — draft the same-day script
 [Your script structure. Mine: HOOK (0-3s, the news framed for the viewer's
 stakes) → WHAT HAPPENED (10-15s, 2-3 verified facts) → THE STANCE (15-20s,
@@ -293,7 +369,9 @@ and the tools the episode would feature (each verified). Dedupe first: same
 subject + same hook already in the database at any status = silent skip.
 
 ### PASS items — log the update, no full post copy
-2-3 plain sentences on what changed and why it matters, plus the source. Tag
+2-3 plain sentences on what changed and why it matters, plus the source. Run
+the de-AI audit over the whole set of update bodies before writing any of them
+— the trailing-significance tell only shows up when you read them in a row. Tag
 each entry with WHICH weekly roundup it feeds and WHICH beat it came from, in
 a field the roundup task can filter on plus a plain line in the body. Once
 you run more than one roundup, an untagged update is one the roundup task has
