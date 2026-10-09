@@ -12,21 +12,32 @@ instead of re-explaining yourself next month.
 
 ---
 
-## Current direction: [DATE OF YOUR LATEST STRATEGY NOTE]
+## CURRENT CONTENT DIRECTION: [DATE YOU CONFIRMED IT]
 
-[Optional, but worth the two paragraphs once your positioning starts moving
-faster than this prompt does. Point the task at a dated strategy document —
-"before scanning, read [PATH], the strategy it names, and that project's
-agent file; apply its scan section" — and say plainly that those current
-instructions override any stale positioning left in the prompt below. A long
-prompt accumulates assumptions, and a dated pointer is cheaper to keep true
-than the whole file.]
+[Optional, but worth the space once your positioning starts moving faster
+than this prompt does. A long prompt accumulates assumptions, and one dated
+block at the top is cheaper to keep true than the whole file.]
 
-[Then write a PORTABLE FALLBACK paragraph for the run where those references
-can't be read: the handful of standing priorities, which inquiries are
-legitimate destinations, what the task must not invent (assets, results,
-product access, prices), and which pauses stay paused. End it with "report
-unreadable references" so a silent fallback never looks like a normal run.]
+Apply this direction before the older context, audience, and pillar
+descriptions below. Preserve this task's existing schedule, sources,
+destinations, duplicate checks, and approval/publishing boundaries. This
+update changes editorial direction, not permissions.
+
+[Then the direction itself, written out IN FULL here: what to protect (the
+content that already performs), which new paths to develop, and which of
+those are only hypotheses. Label every offer as either current or an
+unvalidated hypothesis — the task must never write about a hypothesis as if
+it were a launched product.]
+
+**Write it inline, don't point at a file (changed 2026-10-01).** The first
+version of this block said "before scanning, read [PATH]" with a portable
+fallback for when the file couldn't be read. Once the task moved to a remote
+scheduler, that local path couldn't resolve, so the fallback became the whole
+direction. If your
+task runs anywhere other than the machine holding your strategy doc, the
+direction has to live in the prompt. A path to the full strategy can still
+follow as "if accessible", with the line "the self-contained direction above
+applies even if the strategy file is unavailable."
 
 **If the live trigger for this task lives somewhere else** — a remote
 scheduler, a hosted prompt — say so at the top of this file. Editing a local
@@ -303,6 +314,13 @@ wide-net items until I've said what I keep.
 **SKIP:** hype or opinion with no takeaway; vendor PR with no user-facing
 change; deep technical dives my audience won't use; anything already covered
 (check the calendar). Skips are silent.
+
+**FOR STRONG CANDIDATES, NAME FIVE THINGS (added 2026-10-01):** the
+audience, the content's purpose, the source and its evidence status, the
+existing series it fits, and the relevant current offer or future hypothesis.
+Seek primary research, useful cases, and counterevidence alongside feature
+news; proposed research is not an established finding. No arbitrary topic
+quotas, and not every authority piece needs a sales CTA.
 
 Keep the bar high on REACTION and on what gets written to the database. Keep
 the bar deliberately low on what gets surfaced in Slack from new sources.
