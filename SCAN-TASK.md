@@ -12,6 +12,36 @@ instead of re-explaining yourself next month.
 
 ---
 
+## YOUR SETUP: fill this in first
+
+Easiest way: attach this file to a Claude chat and ask it to interview you,
+one question at a time, to fill in everything below and every `[BRACKETED]`
+spot it points to. Rules outside the brackets can stay exactly as they are.
+
+**Short answers (used all through the file):**
+- `[YOUR BUSINESS NAME]` =
+- `[TIME]` the scan runs (before you wake up) =
+- `[#YOUR-CONTENT-CHANNEL]`, the Slack channel for the morning message =
+- `[YOUR CONTENT CALENDAR]`, the database where scripts go =
+- `[YOUR IDEAS DATABASE]`, the database where series ideas go =
+- `[INSPIRATION DATABASE]` (optional; only if you run the companion task) =
+
+**Longer answers (each one is a bracket in its own section):**
+- Current direction (optional): what to protect, what's new, what's
+  unproven. Section: CURRENT CONTENT DIRECTION.
+- Your business in one paragraph, anything you've paused, your content
+  pillars (the topics you cover), your audiences, and your voice rules.
+  Section: Morning Content Scan.
+- The 2-3 websites you can't afford to miss, your other topics with their
+  searches, and the industry press for each. Section: PHASE 1.
+- Your newsletters, in groups, with the Gmail search for each group.
+  Section: PHASE 2.
+- What makes a story worth reacting to today, your series bar, and what's
+  worth a quick log. Section: PHASE 3.
+- How your same-day scripts are structured. Section: PHASE 4.
+
+---
+
 ## CURRENT CONTENT DIRECTION: [DATE YOU CONFIRMED IT]
 
 [Optional, but worth the space once your positioning starts moving faster
@@ -33,9 +63,8 @@ it were a launched product.]
 version of this block said "before scanning, read [PATH]" with a portable
 fallback for when the file couldn't be read. Once the task moved to a remote
 scheduler, that local path couldn't resolve, so the fallback became the whole
-direction. If your
-task runs anywhere other than the machine holding your strategy doc, the
-direction has to live in the prompt. A path to the full strategy can still
+direction. If your task runs anywhere other than the machine holding your
+strategy doc, the direction has to live in the prompt. A path to the full strategy can still
 follow as "if accessible", with the line "the self-contained direction above
 applies even if the strategy file is unavailable."
 
@@ -58,8 +87,8 @@ brief a new hire.]
 
 **Paused sources:** [Name anything you've deliberately turned off, with the
 date and scope, so the agent doesn't helpfully turn it back on. Mine: one
-vendor's productivity beat is paused business-wide; the exception is when that
-vendor's news lands as an advertising story, because that's a different beat.]
+vendor's productivity topic is paused business-wide; the exception is when that
+vendor's news lands as an advertising story, because that's a different topic.]
 
 **Content pillars:** [List yours, numbered. Each pillar should say what
 qualifies and what job the content does. The fictional example:]
@@ -141,7 +170,7 @@ which is the whole point of Phase 3.
 
 ### PRIORITY SOURCES — FETCH DIRECTLY, READ DEEPLY, EVERY RUN
 
-[Name the 2-3 beats where you cannot afford to miss anything. The rule that
+[Name the 2-3 topics where you cannot afford to miss anything. The rule that
 matters: these get fetched directly and read past the index, never assessed
 from a search-results roundup. The fictional consultant's would be the
 Shopify changelog + blog and the Klaviyo release notes; each entry lists its
@@ -161,30 +190,30 @@ TRY HARDER — read past the index:
 State quiet stretches explicitly — a priority source being quiet is genuinely
 useful planning information.
 
-### BEAT SEARCHES (WebSearch is fine here)
+### TOPIC SEARCHES (WebSearch is fine here)
 
-[This applies to the beats below. The foresight beats in the next section are
+[This applies to the topics below. The foresight topics in the next section are
 the exception: there, search is the fallback, not the opening move.]
 
 [One block per remaining pillar. Each needs: the search queries verbatim, the
 freshness window, and what qualifies vs. what's an automatic skip. The
-fictional consultant's would include: an e-commerce-AI-tools beat with a
+fictional consultant's would include: an e-commerce-AI-tools topic with a
 starter tool list marked non-exhaustive; a DTC brand sweep with "verified
 facts only, no 'reportedly' stories"; a regulation search where proposals
 without a decision are SKIP; and one broad breaking-industry-news search.]
 
 ### TRADE PRESS FIRST, EDITORIAL LENS ALWAYS
 
-Some of those beats are about where an industry is going, not about what a
+Some of those topics are about where an industry is going, not about what a
 vendor shipped. For those, the goal is foresight, not feature tracking, and
 the order of operations matters: sweep the trade press FIRST, every run,
 before anything a vendor published about itself.
 
-[List the trade titles per beat, plus a second line of titles worth checking
-when the angle is clearly on-beat. The fictional consultant would sweep the
-retail and DTC trade press for the store-operations and brand beats. Any
-subscriber newsletters that cover the same beat (Phase 2) are secondary but
-often carry the better story — mine them for these beats too.]
+[List the trade titles per topic, plus a second line of titles worth checking
+when the angle is clearly on-topic. The fictional consultant would sweep the
+retail and DTC trade press for the store-operations and brand topics. Any
+subscriber newsletters that cover the same topic (Phase 2) are secondary but
+often carry the better story — mine them for these topics too.]
 
 **WINDOW RULE (added 2026-09-03):** default these sweeps to the last 24 hours,
 since the scan runs daily. If the previous run was more than a day ago, widen
@@ -195,8 +224,8 @@ and why. Search has no reliable date filter, so the window is a filter you
 apply after reading publication dates, not a search parameter.
 
 **METHOD: RSS FIRST, SEARCH SECOND (added 2026-09-03).** Do not lead with
-site-scoped search on these beats. Tested and failed: queries shaped like
-`[beat] site:[trade title] OR site:[trade title]` return evergreen hub pages,
+site-scoped search on these topics. Tested and failed: queries shaped like
+`[topic] site:[trade title] OR site:[trade title]` return evergreen hub pages,
 event listings and sponsored posts, almost nothing inside the window. A broad
 topical query plus a `site:` operator ranks authority over recency, which is
 the opposite of what a daily scan needs. Feeds are dated and in
@@ -222,7 +251,7 @@ publication:
 4. **Use search only to fill gaps:** a specific story you need to verify, a
    named brand, or a publication outside the roster.
 
-Then apply the editorial lens to every item on these beats: "what does this
+Then apply the editorial lens to every item on these topics: "what does this
 mean for how the people I serve compete or operate, and is there something
 here a forward-looking one of them would act on?" If you can't answer that,
 skip it.
@@ -235,7 +264,7 @@ skip it.
 
 **On tool and model news (added 2026-09-03):** big model launches and genuinely
 notable new tools are wanted, but they belong to the tool/vendor pillar and the
-broad breaking-news sweep, not to a foresight beat. Do not let a foresight beat
+broad breaking-news sweep, not to a foresight topic. Do not let a foresight topic
 turn into a changelog for every tool in the category that ships a feature. If a
 release only matters because of what it lets someone newly do, write it up as
 the strategic shift, not as the feature.
@@ -250,18 +279,40 @@ Capture title, source, URL, and a note per item. Hold everything for Phase 3.
 
 ## PHASE 2: SCAN GMAIL NEWSLETTERS
 
-[Your newsletter groups, each with its exact Gmail search query. Group them
-by job — mine: (A) core AI news, (B) AI tools/industry, (C) marketing,
-creator and brand strategy. Note any secondary address newsletters land at,
-and search the whole mailbox.]
+Search Gmail for every group below, received in the last 24 hours. Search
+the whole mailbox: if some newsletters land at a second address, say so
+here, and don't filter by recipient.
+
+[Your newsletter groups. Group them by job — mine: (A) core AI news, (B) AI
+tools/industry, (C) marketing, creator and brand strategy. Each group gets
+ONE Gmail search, with every sender listed by display name AND by address,
+because senders change their from-address more often than their name. Under
+each search, one line per newsletter on what it's for, so the agent knows
+which topic to mine it for. The fictional consultant's would look like:]
+
+**Group A — e-commerce news:**
+`newer_than:1d (from:"Store Ops Daily" OR from:hello@storeopsdaily.example OR from:"The Checkout" OR from:news@thecheckout.example)`
+- **Store Ops Daily**: platform and app updates. Main source for pillar 1.
+- **The Checkout**: DTC brand news. Mine deeply for pillar 6.
+
+**Group B — email/SMS and automation:**
+`newer_than:1d (from:"Flow Notes" OR from:flownotes@substack.example)`
+- **Flow Notes**: email automation teardowns. A new sign-up: if an issue
+  arrives, process it, but don't assume it's coming.
 
 Ignore admin mail from these senders: receipts, welcome emails, subscription
-confirmations. Only process actual issues.
+confirmations, gift-subscription offers. Only process actual issues.
 
-**Discovery sweep:** also scan the newsletter/promotions categories for
-senders NOT in the groups. If something looks like a real fit, mine it and
-flag the sender at the end of the Slack summary for permanent approval.
-Ignore [your junk categories].
+**Discovery sweep:** also run `newer_than:2d category:newsletters` and
+`newer_than:2d category:promotions`, and look for newsletters on your topics
+from senders NOT in the groups. If something looks like a real fit, mine it
+and flag the sender at the end of the Slack summary for permanent approval.
+Ignore [your junk categories — mine: retail promos, general news digests,
+real estate, travel].
+
+For each newsletter, read sender, subject and body, and hold it for Phase 3.
+If an issue is too large to open, evaluate it from the subject and preview,
+and say in the summary that you only read the preview.
 
 **Archiving:** archive every newsletter thread actually scanned this run
 (remove the INBOX label — archive, never delete). Never archive
@@ -303,7 +354,7 @@ mine includes priority-vendor features that change day-to-day work, tool
 drops with a non-technical angle, brand stories worth the weekly roundup,
 governance items with a concrete business consequence, and process teardowns
 with a repeatable mechanic.] When unsure between PASS and REACTION: just log
-it. Items from the foresight beats clear PASS only through the editorial lens
+it. Items from the foresight topics clear PASS only through the editorial lens
 in Phase 1 — on-pillar is not enough, a vendor feature with no user story
 attached is still a SKIP.
 
@@ -390,7 +441,7 @@ subject + same hook already in the database at any status = silent skip.
 2-3 plain sentences on what changed and why it matters, plus the source. Run
 the de-AI audit over the whole set of update bodies before writing any of them
 — the trailing-significance tell only shows up when you read them in a row. Tag
-each entry with WHICH weekly roundup it feeds and WHICH beat it came from, in
+each entry with WHICH weekly roundup it feeds and WHICH topic it came from, in
 a field the roundup task can filter on plus a plain line in the body. Once
 you run more than one roundup, an untagged update is one the roundup task has
 to re-read the source to place, which it won't. More than three updates
